@@ -49,7 +49,9 @@ document.addEventListener("nav", () => {
           cell.style[attrMatch[2]] = attrMatch[3];
         }
 
-        cell.innerHTML = cellText.replace(/\\*\\*(.+?)\\*\\*/g, "<strong>$1</strong>");
+        cell.innerHTML = cellText
+          .replace(/\\*\\*(.+?)\\*\\*/g, "<strong>$1</strong>")
+          .replace(/_(.+?)_/g, "<em>$1</em>");
 
         row.appendChild(cell);
         lastCell = cell;
