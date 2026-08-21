@@ -63,6 +63,12 @@ document.addEventListener("nav", () => {
 var SheetTables = () => {
   return {
     name: "SheetTables",
+    markdownPlugins() {
+      return [];
+    },
+    htmlPlugins() {
+      return [];
+    },
     externalResources() {
       return {
         js: [

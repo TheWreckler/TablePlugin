@@ -72,6 +72,12 @@ document.addEventListener("nav", () => {
 export const SheetTables: QuartzTransformerPlugin = () => {
   return {
     name: "SheetTables",
+    markdownPlugins() {
+      return [];
+    },
+    htmlPlugins() {
+      return [];
+    },
     externalResources() {
       return {
         js: [
